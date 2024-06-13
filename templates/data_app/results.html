@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analysis Results</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'data_app/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Analysis Results</h1>
+
+        <div class="data-section">
+            <h2>First Few Rows</h2>
+            {{ data|safe }}
+        </div>
+
+        <div class="data-section">
+            <h2>Summary Statistics</h2>
+            {{ summary|safe }}
+        </div>
+
+        <div class="data-section">
+            <h2>Missing Values</h2>
+            {{ missing_values|safe }}
+        </div>
+
+        <div class="plot-section">
+            <h2>Plots</h2>
+            {% for plot in plots %}
+                <img src="data:image/png;base64,{{ plot }}" alt="Plot">
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
