@@ -23,7 +23,7 @@ This is a Django-based web application that allows users to upload CSV files, pe
 
 ### Step 1: Clone the Repository - 
      
-      https://github.com/Harsh-Trivedii/assign_ve3.git
+      https://github.com/prabhat8701/ve3file.git
      
       
 ### Step 2: Install the required dependencies-
