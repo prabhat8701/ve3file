@@ -1,4 +1,4 @@
-# Django CSV Data Analysis Web Application
+# VE3 Django-based web application
 
 This is a Django-based web application that allows users to upload CSV files, performs data analysis using pandas and numpy, and displays the results and visualizations on the web interface.
 
@@ -74,14 +74,4 @@ In this section of code, the Django view function handles a POST request, which 
 4. **Context Creation:**
    - All the analysis results and plots are stored in a dictionary called `context`, which will be passed to the template for rendering on the web page.
 
-## User Interface
 
-### CSV File upload template-
-![file](images/img1.png)
-
-### Displays the results and visualizations on the web interface
-![result](images/img2.png)
-
-![result](images/img3.png)
-
-![result](images/img4.png)
